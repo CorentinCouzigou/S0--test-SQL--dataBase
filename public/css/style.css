@@ -1,0 +1,28 @@
+body {
+        animation: wheelHueColor 10s infinite;
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+};
+
+
+h1 {
+  color: yellow;
+}
+
+input[type="submit"] {
+  background-color: rgb(0, 255, 13);
+  color: red;
+}
+
+@keyframes wheelHueColor {
+  from, to { background-color: #F0F; }
+  20%      { background-color: yellow }
+  40%      { background-color: orange }
+  60%      { background-color: green }
+  80%      { background-color: blue }
+  100%      { background-color: red }
+}
